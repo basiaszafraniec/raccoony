@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <Router>
+    <>
       <Routes>
         <Route path='/feed' element={<Feed/>}/>
         <Route path='/map' element={<Map/>}/>
@@ -20,7 +20,7 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
       </Routes>
       <Navbar></Navbar>
-    </Router>
+    </>
 
   )
 }
