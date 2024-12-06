@@ -1,0 +1,16 @@
+.nav-bar a {
+    /* color: white; */
+}
+.nav-bar {
+    background-color: pink;
+    height: 5%;
+    width: inherit;
+    position: fixed;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+}
+.nav-btn {
+    padding: 1rem;
+}
