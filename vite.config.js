@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc"; // this on might be "import react from "@vitejs/plugin-react";" in your solution
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+// https://vitejs.dev/config/
+export default defineConfig(({ command }) => {
+    const config = {
+        plugins: [react()],
+        base: "/raccoony"
+    };
+
+    if (command !== "serve") {
+        config.base = "/react-vite-rest-post-app-with-auth/";
+    }
+
+    return config;
+});
