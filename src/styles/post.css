@@ -1,0 +1,21 @@
+.post-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #C5ACF8;
+    width: 90%;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-header img {
+    /* position: absolute; */
+    width: 32px;
+    height: 32px;
+}
+
+.post-inner {
+    background-color: bisque;
+}

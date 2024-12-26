@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/feed' element={<Feed/>}/>
+        <Route path='/' element={<Feed/>}/>
         <Route path='/map' element={<Map/>}/>
         <Route path='/raccoon' element={<Raccoon/>}/>
         <Route path='/inbox' element={<Inbox/>}/>

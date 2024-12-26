@@ -1,10 +1,14 @@
 img{
     width: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 button {
     padding: 1rem;
     margin: 1rem;
     background-color: pink;
+}
+
+p {
+    /* background-color: pink; */
 }

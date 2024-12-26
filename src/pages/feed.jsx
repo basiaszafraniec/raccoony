@@ -6,15 +6,15 @@ export default function Feed() {
     return (
         <>
             <p>feed</p>
-            <div className="your-feed">
+            <>
                 {posts.map((post, index) => {
                     return (
-                        <div key={index} className="post">
-                            <Post post={post}/>
+                        <div key={index} className="post-container">
+                            <Post post={post} />
                         </div>
                     )
                 })}
-            </div>
+            </>
         </>
     )
 }
