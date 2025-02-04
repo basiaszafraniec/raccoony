@@ -1,0 +1,64 @@
+{
+    "posts": {
+        "postId1": {
+            "userId": "silly_trash_boy",
+            "text": "got all this cake i can't eat come grab it while it's hot",
+            "picture": "https://imgur.com/zdAXVuG",
+            "location": {
+                "latitude": 40.7128,
+                "longitude": -74.0060
+            },
+            "tags": [
+                "travel",
+                "newyork"
+            ],
+            "timestamp": 1678886400
+        },
+        "postId2": {
+            "userId": "userId2",
+            "text": "Loving the vibes here!",
+            "picture": "https://imgur.com/QOUV48G",
+            "location": {
+                "latitude": 34.0522,
+                "longitude": -118.2437
+            },
+            "tags": [
+                "losangeles",
+                "sunset"
+            ],
+            "timestamp": 1678986400
+        },
+        "postId3": {
+            "userId": "userId3",
+            "text": "Adventure time 🏞️",
+            "picture": "https://imgur.com/pMQ8bEU",
+            "location": {
+                "latitude": 51.5074,
+                "longitude": -0.1278
+            },
+            "tags": [
+                "london",
+                "travel",
+                "adventure"
+            ],
+            "timestamp": 1679086400
+        }
+    },
+    "users": {
+        "userId1": {
+            "username": "user123",
+            "email": "user123@example.com",
+            "profilePicture": "gs://your-bucket/images/user123-profile.jpg"
+        },
+        "userId2": {
+            "username": "user456",
+            "email": "user456@example.com",
+            "profilePicture": "gs://your-bucket/images/user456-profile.jpg"
+        },
+        "userId3": {
+            "username": "user789",
+            "email": "user789@example.com",
+            "profilePicture": "gs://your-bucket/images/user789-profile.jpg"
+        }
+    }
+}

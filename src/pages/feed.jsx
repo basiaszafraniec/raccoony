@@ -1,20 +1,16 @@
-import { useState } from "react";
-import Post from "../components/post";
+import React from "react";
+import PostComp from "../components/post.jsx";
 
-export default function Feed() {
-    const [posts, setPosts] = useState(["post1", "post2", "post3"]);
-    return (
-        <>
-            <p>feed</p>
-            <>
-                {posts.map((post, index) => {
-                    return (
-                        <div key={index} className="post-container">
-                            <Post post={post} />
-                        </div>
-                    )
-                })}
-            </>
-        </>
-    )
-}
+const Feed = ({ posts }) => {
+  if (!posts) return <p>Loading posts...</p>;
+
+  return (
+    <div>
+      {Object.entries(posts).map(([postId, post]) => (
+        <PostComp key={postId} post={post} />
+      ))}
+    </div>
+  );
+};
+
+export default Feed;

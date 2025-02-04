@@ -1,21 +1,67 @@
-.post-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #C5ACF8;
-    width: 90%;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.post-card {
+  width: 320px;
+  background-color: #e9d6ff;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  border: 3px solid #8a62d3;
 }
 
 .post-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #c6a5ff;
+  padding: 8px;
+  border-radius: 10px 10px 0 0;
+  font-size: 12px;
+  color: #3b215a;
 }
 
-.post-header img {
-    /* position: absolute; */
-    width: 32px;
-    height: 32px;
+/* .post-header span {
+    font-size: 2px;
+} */
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: 2px solid white;
 }
 
-.post-inner {
-    background-color: bisque;
+.text-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #3b215a;
+  line-height: 1.4;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.location {
+  color: #348f46;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.window-button {
+  width: 15px;
+  height: 15px;
+  background-color: #7ac488;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
 }
