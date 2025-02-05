@@ -8,7 +8,7 @@ const PostComp = ({ post }) => {
           <span>{post.userId}</span>
         </div>
         <div className="text-content">{post.text}</div>
-        {post.picture && <img src="public/att.0Jq3xtR0kFrhuq48EA2EFyrlhKAhkKKUQRrqJOxieaQ.jpg" alt="Post" className="post-image" />}
+        {post.picture && <img src={post.picture} alt="Post" className="post-image" />}
         {post.location && (
           <p className="location">
             <a href={`https://www.google.com/maps?q=${post.location.latitude},${post.location.longitude}`} target="_blank" rel="noopener noreferrer">

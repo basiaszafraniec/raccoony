@@ -4,9 +4,3 @@
     width: 100%;
     z-index: 0;
 }
-
-.leaflet-marker-icon {
-    border: 2px solid #FF5722; /* Bright border color */
-    border-radius: 50%;       /* Circular shape */
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.8); /* Glowing effect */
-}
