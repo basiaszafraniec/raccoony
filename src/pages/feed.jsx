@@ -4,7 +4,7 @@ import NewPost from "../components/newPost.jsx"; // Import the NewPost component
 
 
 const Feed = ({ posts, users }) => {
-  if (!posts) return <p>Loading posts...</p>;
+  if (!posts) return <p>loading posts...</p>;
 
   return (
     <div className="feed">

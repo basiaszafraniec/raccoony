@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 import { ref, get, child } from "firebase/database";
 import { db } from "./firebase.js";
+import 'leaflet/dist/leaflet.css';
+
 
 export default App
 
