@@ -32,7 +32,7 @@
     background: rgba(0, 0, 0, 0.5);
   }
   
-  button {
+  .carousel-container button {
     background: none;
     border: none;
     color: white;
@@ -51,7 +51,7 @@
     right: 10px;
   }
   
-  button:hover {
+  .carousel-container button:hover {
     color: #FF2D95; /* Change button color on hover */
   }
   

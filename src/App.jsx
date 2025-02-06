@@ -15,6 +15,7 @@ export default App
 function App() {
   const [posts, setPosts] = useState(null);
   const [users, setUsers] = useState(null);
+  const [profileInfo, setProfileInfo] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,6 +28,9 @@ function App() {
         // fetch users
         const usersSnap = await get(child(dbRef, "users"));
         const usersData = usersSnap.exists() ? usersSnap.val() : {};
+        // fetch profile-info
+        const profileSnap = await get(child(dbRef, "profile-info"));
+        const profileData = profileSnap.exists() ? profileSnap.val() : {};
 
         // merge user data into posts
         const mergedPosts = Object.entries(postsData).map(([postId, post]) => ({
@@ -37,6 +41,7 @@ function App() {
 
         setPosts(mergedPosts);
         setUsers(usersData);
+        setProfileInfo(profileData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -53,10 +58,9 @@ function App() {
         <Route path="/raccoon" element={<Raccoon />} />
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/message" element={<Message />} />
-        <Route path="/profile" element={<Profile users={users} />} />
+        <Route path="/profile" element={<Profile users={users} profileInfo={profileInfo} />} />
       </Routes>
       <Navbar />
     </>
   );
 }
-

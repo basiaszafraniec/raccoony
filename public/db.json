@@ -8,7 +8,10 @@
                 "latitude": 40.7128,
                 "longitude": -74.0060
             },
-            "tags": ["furniture", "get-quick"],
+            "tags": [
+                "furniture",
+                "get-quick"
+            ],
             "timestamp": 1678886400
         },
         "postId2": {
@@ -19,7 +22,10 @@
                 "latitude": 34.0522,
                 "longitude": -118.2437
             },
-            "tags": ["collection", "electronics"],
+            "tags": [
+                "collection",
+                "electronics"
+            ],
             "timestamp": 1678986400
         },
         "postId3": {
@@ -30,7 +36,10 @@
                 "latitude": 51.5074,
                 "longitude": -0.1278
             },
-            "tags": ["furniture", "question"],
+            "tags": [
+                "furniture",
+                "question"
+            ],
             "timestamp": 1679086400
         },
         "postId4": {
@@ -41,7 +50,9 @@
                 "latitude": 37.7749,
                 "longitude": -122.4194
             },
-            "tags": ["get-quick"],
+            "tags": [
+                "get-quick"
+            ],
             "timestamp": 1679186400
         },
         "postId5": {
@@ -52,7 +63,9 @@
                 "latitude": 48.8566,
                 "longitude": 2.3522
             },
-            "tags": ["added-dumpster"],
+            "tags": [
+                "added-dumpster"
+            ],
             "timestamp": 1679286400
         },
         "postId6": {
@@ -63,14 +76,18 @@
                 "latitude": 52.5200,
                 "longitude": 13.4050
             },
-            "tags": ["added-dumpster"],
+            "tags": [
+                "added-dumpster"
+            ],
             "timestamp": 1679386400
         },
         "postId7": {
             "userId": "user1",
             "text": "@lil_raccoonster added #bike to their collection!",
             "picture": "https://imgur.com/undefined.jpeg",
-            "tags": ["added-to-collection"],
+            "tags": [
+                "added-to-collection"
+            ],
             "timestamp": 1679486400
         },
         "postId8": {
@@ -81,14 +98,18 @@
                 "latitude": 40.7306,
                 "longitude": -73.9352
             },
-            "tags": ["get-quick"],
+            "tags": [
+                "get-quick"
+            ],
             "timestamp": 1679586400
         },
         "postId9": {
             "userId": "user3",
             "text": "meme of the day: when u find free food in the trash but it's still warm...",
             "picture": "nope",
-            "tags": ["meme"],
+            "tags": [
+                "meme"
+            ],
             "timestamp": 1679686400
         },
         "postId10": {
@@ -99,14 +120,19 @@
                 "latitude": 41.8781,
                 "longitude": -87.6298
             },
-            "tags": ["get-quick", "furniture"],
+            "tags": [
+                "get-quick",
+                "furniture"
+            ],
             "timestamp": 1679786400
         },
         "postId11": {
             "userId": "user2",
             "text": "@silly_trash_boy added #chair to their collection!",
             "picture": "https://imgur.com/euiZkO3.jpeg",
-            "tags": ["added-to-collection"],
+            "tags": [
+                "added-to-collection"
+            ],
             "timestamp": 1679886400
         },
         "postId12": {
@@ -117,14 +143,18 @@
                 "latitude": 45.4642,
                 "longitude": 9.1900
             },
-            "tags": ["get-quick"],
+            "tags": [
+                "get-quick"
+            ],
             "timestamp": 1679986400
         },
         "postId13": {
             "userId": "user1",
             "text": "does anyone know how to safely clean a dumpster-find blender? like do i just soak it in bleach or what?",
             "picture": "nope",
-            "tags": ["question"],
+            "tags": [
+                "question"
+            ],
             "timestamp": 1680086400
         }
     },
@@ -143,6 +173,43 @@
             "username": "rat_karen",
             "email": "user789@example.com",
             "profilePicture": "https://imgur.com/hOUMM4a.jpeg"
+        }
+    },
+    "profile-info": {
+        "master-user": {
+            "username": "silly_trash_girl",
+            "profilePic": "https://imgur.com/TH1onWl.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "email": "stinky@email.com",
+            "password": "bigBallsSummer",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#FFFAF0",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                },
+                {
+                    "name": "raccoon toy",
+                    "picture": "https://imgur.com/sSErM1l.jpeg",
+                    "caption": "idk what it is but my raccon loves staring at it"
+                },
+                {
+                    "name": "tv still works",
+                    "picture": "https://imgur.com/579bifq.jpeg",
+                    "caption": "love watching netflix on this bad boy"
+                }
+            ],
+            "raccoonHappinessPoints": 1200,
+            "achievements": {
+                "completed-profile": true,
+                "added-item-to-collection": true,
+                "fed-raccoon": true,
+                "became-god": false,
+                "figured-out-how-to-use-canvas": false,
+                "is-a-pretty-boy": true
+            }
         }
     }
 }

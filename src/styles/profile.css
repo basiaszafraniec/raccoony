@@ -50,6 +50,7 @@
   .prof-username,
   .collection-name {
     text-shadow: none;
+    display: flex;
   }
   
   .post-content-prof {
