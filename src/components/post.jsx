@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/post.css";
 
 const PostComp = ({ post }) => {
   const navigate = useNavigate();
+  const [liked, setLiked] = useState(false);
 
   const handleViewLocation = () => {
     if (post.location) {
       navigate(`/map?lat=${post.location.latitude}&lng=${post.location.longitude}`);
     }
+  };
+
+  const handleLike = () => {
+    setLiked(!liked);
   };
 
   return (
@@ -29,7 +34,15 @@ const PostComp = ({ post }) => {
         {post.picture && post.picture.trim() !== "nope" && (
           <img src={post.picture} alt="Post" className="post-image" />
         )}
-
+      </div>
+      <div className="post-actions">
+        <button 
+          onClick={handleLike} 
+          className={`like-btn ${liked ? "liked" : ""}`}
+        >
+          {liked ? "❤️ Liked" : "🤍 Like"}
+        </button>
+        <button className="comment-btn">💬 Comment</button>
       </div>
       <div className="window-button"></div>
     </div>
@@ -37,4 +50,3 @@ const PostComp = ({ post }) => {
 };
 
 export default PostComp;
-
