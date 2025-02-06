@@ -1,24 +1,40 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/post.css";
+
 const PostComp = ({ post }) => {
-    return (
-      <div className="post-card">
-        <div className="post-header">
-          <img src={post.profilePicture} alt="Profile" className="profile-pic" />
-          <span>{post.userId}</span>
-        </div>
-        <div className="text-content">{post.text}</div>
-        {post.picture && <img src={post.picture} alt="Post" className="post-image" />}
+  const navigate = useNavigate();
+
+  const handleViewLocation = () => {
+    if (post.location) {
+      navigate(`/map?lat=${post.location.latitude}&lng=${post.location.longitude}`);
+    }
+  };
+
+  return (
+    <div className="post-card">
+      <div className="post-header">
+        <img src={post.profilePicture} alt="Profile" className="profile-pic" />
+        <span><h2>{post.username}</h2></span>
+      </div>
+      <div className="post-content">
+        <div className="text-content"><span>{post.text}</span></div>
         {post.location && (
           <p className="location">
-            <a href={`https://www.google.com/maps?q=${post.location.latitude},${post.location.longitude}`} target="_blank" rel="noopener noreferrer">
+            <button onClick={handleViewLocation} className="view-location-btn">
               {post.location.name || "View Location"}
-            </a>
+            </button>
           </p>
         )}
-        <div className="window-button"></div>
+        {post.picture && post.picture.trim() !== "nope" && (
+          <img src={post.picture} alt="Post" className="post-image" />
+        )}
+
       </div>
-    );
-  };
-  
-  export default PostComp;
+      <div className="window-button"></div>
+    </div>
+  );
+};
+
+export default PostComp;
+

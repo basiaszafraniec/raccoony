@@ -1,47 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .post-card {
-  width: 320px;
-  background-color: #e9d6ff;
+  width: 80%;
+  background-color: #C5ACF8;
   border-radius: 15px;
   padding: 10px;
   margin: 20px auto;
-  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
-  font-family: 'Press Start 2P', cursive;
+  box-shadow: 5px 5px 0 #EEB5B5;
   position: relative;
-  border: 3px solid #8a62d3;
+  border: 3px solid #85596A;
 }
 
 .post-header {
   display: flex;
   align-items: center;
-  background-color: #c6a5ff;
   padding: 8px;
   border-radius: 10px 10px 0 0;
   font-size: 12px;
-  color: #3b215a;
-}
+  color: #5f3e4b;
 
-/* .post-header span {
-    font-size: 2px;
-} */
+}
 
 .profile-pic {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-right: 8px;
-  border: 2px solid white;
+  border: 2px solid #85596A;
 }
 
-.text-content {
+.post-content {
   background-color: #fff;
   border-radius: 10px;
   padding: 12px;
   margin: 10px 0;
-  font-size: 12px;
-  color: #3b215a;
+  font-size: 1rem;
+  font-family:'Times New Roman', Times, serif;
   line-height: 1.4;
+}
+.text-content span {
+  color: #5f3e4b;
+
 }
 
 .post-image {
@@ -64,4 +67,51 @@
   top: 10px;
   right: 10px;
   border-radius: 3px;
+}
+
+/* new post */
+
+.new-post {
+  display: flex;
+  justify-content: center;
+}
+
+.plus-button {
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.post-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.submit-post-btn,
+.cancel-post-btn {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #7ac488;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-post-btn {
+  background-color: #6b3137;
 }
