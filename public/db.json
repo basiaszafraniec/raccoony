@@ -162,17 +162,47 @@
         "user1": {
             "username": "silly_trash_boy",
             "email": "user123@example.com",
-            "profilePicture": "https://imgur.com/zdAXVuG.jpeg"
+            "profilePic": "https://imgur.com/zdAXVuG.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#00ffff",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                }
+            ]
         },
         "user2": {
             "username": "lil_raccoonster",
             "email": "user456@example.com",
-            "profilePicture": "https://imgur.com/ukQViE0.jpeg"
+            "profilePic": "https://imgur.com/ukQViE0.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#00ffff",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                }
+            ]
         },
         "user3": {
             "username": "rat_karen",
             "email": "user789@example.com",
-            "profilePicture": "https://imgur.com/hOUMM4a.jpeg"
+            "profilePic": "https://imgur.com/hOUMM4a.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#00ffff",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                }
+            ]
         }
     },
     "profile-info": {
@@ -183,7 +213,7 @@
             "email": "stinky@email.com",
             "password": "bigBallsSummer",
             "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
-            "backgroundColor": "#FFFAF0",
+            "backgroundColor": "#ffc0cb",
             "collection": [
                 {
                     "name": "bread",

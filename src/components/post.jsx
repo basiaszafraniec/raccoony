@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/post.css";
+import { Link } from "react-router-dom";
 
-const PostComp = ({ post }) => {
+const PostComp = ({ postId, post, users }) => {
   const navigate = useNavigate();
   const [liked, setLiked] = useState(false);
 
@@ -16,12 +17,16 @@ const PostComp = ({ post }) => {
     setLiked(!liked);
   };
 
+  console.log(post);
+
   return (
     <div className="post-card">
-      <div className="post-header">
-        <img src={post.profilePicture} alt="Profile" className="profile-pic" />
-        <span><h2>{post.username}</h2></span>
-      </div>
+      <Link to={`/user/${post.userId}`} className="username">
+        <div className="post-header">
+          <img src={post.profilePic} alt="Profile" className="profile-pic" />
+          <span><h2>{post.username}</h2></span>
+        </div>
+      </Link>
       <div className="post-content">
         <div className="text-content"><span>{post.text}</span></div>
         {post.location && (
@@ -36,8 +41,8 @@ const PostComp = ({ post }) => {
         )}
       </div>
       <div className="post-actions">
-        <button 
-          onClick={handleLike} 
+        <button
+          onClick={handleLike}
           className={`like-btn ${liked ? "liked" : ""}`}
         >
           {liked ? "❤️ Liked" : "🤍 Like"}

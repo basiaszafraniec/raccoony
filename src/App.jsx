@@ -5,6 +5,7 @@ import Raccoon from './pages/raccoon';
 import Inbox from './pages/inbox';
 import Message from './pages/message.jsx';
 import Profile from './pages/profile';
+import UserProfile from './pages/userProfile.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 import { ref, get, child } from "firebase/database";
@@ -28,20 +29,30 @@ function App() {
         // fetch users
         const usersSnap = await get(child(dbRef, "users"));
         const usersData = usersSnap.exists() ? usersSnap.val() : {};
+        const usersDataArray = Object.entries(usersData).map(([id, user]) => ({
+          id,  // Adding the id as a property to each user
+          ...user,
+        }));
+
         // fetch profile-info
         const profileSnap = await get(child(dbRef, "profile-info"));
         const profileData = profileSnap.exists() ? profileSnap.val() : {};
 
         // merge user data into posts
-        const mergedPosts = Object.entries(postsData).map(([postId, post]) => ({
-          ...post,
-          username: usersData[post.userId]?.username || "Unknown User",
-          profilePicture: usersData[post.userId]?.profilePicture || "https://via.placeholder.com/50",
-        }));
+        const mergedPosts = Object.entries(postsData).map(([postId, post]) => {
+          const user = usersData[post.userId];
+          return {
+            ...post,
+            username: user?.username || "Unknown User",
+            profilePic: user?.profilePic || "https://via.placeholder.com/50",
+          };
+        });
+        
 
         setPosts(mergedPosts);
-        setUsers(usersData);
+        setUsers(usersDataArray);
         setProfileInfo(profileData);
+
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -53,12 +64,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Feed posts={posts} />} />
+        <Route path="/" element={<Feed posts={posts} users={users} />} />
         <Route path="/map" element={<Map />} />
         <Route path="/raccoon" element={<Raccoon />} />
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/message" element={<Message />} />
         <Route path="/profile" element={<Profile users={users} profileInfo={profileInfo} />} />
+        <Route path="/user/:userId" element={<UserProfile users={users} />} />
       </Routes>
       <Navbar />
     </>
