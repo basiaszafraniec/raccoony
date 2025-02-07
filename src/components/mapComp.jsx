@@ -65,7 +65,7 @@ export default function MapComponent() {
   }, []);
 
   return (
-    <MapContainer id="map" center={[56.1629, 10.2039]} zoom={13}>
+    <MapContainer id="map" center={[51.5074, -0.1278]} zoom={13}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
