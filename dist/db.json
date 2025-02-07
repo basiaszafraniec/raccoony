@@ -1,0 +1,245 @@
+{
+    "posts": {
+        "postId1": {
+            "userId": "user1",
+            "text": "someone left all this furniture outside my dorm, come and get it!",
+            "picture": "https://imgur.com/iIYerrM.jpeg",
+            "location": {
+                "latitude": 40.7128,
+                "longitude": -74.0060
+            },
+            "tags": [
+                "furniture",
+                "get-quick"
+            ],
+            "timestamp": 1678886400
+        },
+        "postId2": {
+            "userId": "user2",
+            "text": "brooo look at this epic microwave i found! it's cleaner than the one i got at home lmao, dm me if u want my old one, it's stinky tho",
+            "picture": "https://imgur.com/CqeFywS.jpeg",
+            "location": {
+                "latitude": 34.0522,
+                "longitude": -118.2437
+            },
+            "tags": [
+                "collection",
+                "electronics"
+            ],
+            "timestamp": 1678986400
+        },
+        "postId3": {
+            "userId": "user3",
+            "text": "do you guys have any tips for making sure you don't get bedbugs when taking furniture from the street? i found a super cute armchair but i'm a little afraid to take it into my living room. thank you!",
+            "picture": "nope",
+            "location": {
+                "latitude": 51.5074,
+                "longitude": -0.1278
+            },
+            "tags": [
+                "furniture",
+                "question"
+            ],
+            "timestamp": 1679086400
+        },
+        "postId4": {
+            "userId": "user1",
+            "text": "guys i got all this free stuff from my company dm me if u want it!",
+            "picture": "https://imgur.com/GykGzKk.jpeg",
+            "location": {
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "tags": [
+                "get-quick"
+            ],
+            "timestamp": 1679186400
+        },
+        "postId5": {
+            "userId": "user2",
+            "text": "@rat_karen added a new spot to the map!",
+            "picture": "nope",
+            "location": {
+                "latitude": 48.8566,
+                "longitude": 2.3522
+            },
+            "tags": [
+                "added-dumpster"
+            ],
+            "timestamp": 1679286400
+        },
+        "postId6": {
+            "userId": "user3",
+            "text": "just found this awesome dumpster full of untouched food, crazy how much gets thrown away!",
+            "picture": "https://imgur.com/5J3hlJb.jpeg",
+            "location": {
+                "latitude": 52.5200,
+                "longitude": 13.4050
+            },
+            "tags": [
+                "added-dumpster"
+            ],
+            "timestamp": 1679386400
+        },
+        "postId7": {
+            "userId": "user1",
+            "text": "@lil_raccoonster added #bike to their collection!",
+            "picture": "https://imgur.com/undefined.jpeg",
+            "tags": [
+                "added-to-collection"
+            ],
+            "timestamp": 1679486400
+        },
+        "postId8": {
+            "userId": "user2",
+            "text": "found a brand new toaster just sitting next to the dumpster, works perfectly!",
+            "picture": "https://imgur.com/H8XF7oV.jpeg",
+            "location": {
+                "latitude": 40.7306,
+                "longitude": -73.9352
+            },
+            "tags": [
+                "get-quick"
+            ],
+            "timestamp": 1679586400
+        },
+        "postId9": {
+            "userId": "user3",
+            "text": "meme of the day: when u find free food in the trash but it's still warm...",
+            "picture": "nope",
+            "tags": [
+                "meme"
+            ],
+            "timestamp": 1679686400
+        },
+        "postId10": {
+            "userId": "user1",
+            "text": "anyone need a couch? found this beauty on the street, no stains or anything!",
+            "picture": "https://imgur.com/FUGvmZI.jpeg",
+            "location": {
+                "latitude": 41.8781,
+                "longitude": -87.6298
+            },
+            "tags": [
+                "get-quick",
+                "furniture"
+            ],
+            "timestamp": 1679786400
+        },
+        "postId11": {
+            "userId": "user2",
+            "text": "@silly_trash_boy added #chair to their collection!",
+            "picture": "https://imgur.com/euiZkO3.jpeg",
+            "tags": [
+                "added-to-collection"
+            ],
+            "timestamp": 1679886400
+        },
+        "postId12": {
+            "userId": "user3",
+            "text": "bro i just found a whole ass gaming setup next to an apartment building, what is this life",
+            "picture": "https://imgur.com/JAJ8lg7.jpeg",
+            "location": {
+                "latitude": 45.4642,
+                "longitude": 9.1900
+            },
+            "tags": [
+                "get-quick"
+            ],
+            "timestamp": 1679986400
+        },
+        "postId13": {
+            "userId": "user1",
+            "text": "does anyone know how to safely clean a dumpster-find blender? like do i just soak it in bleach or what?",
+            "picture": "nope",
+            "tags": [
+                "question"
+            ],
+            "timestamp": 1680086400
+        }
+    },
+    "users": {
+        "user1": {
+            "username": "silly_trash_boy",
+            "email": "user123@example.com",
+            "profilePic": "https://imgur.com/zdAXVuG.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#00ffff",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                }
+            ]
+        },
+        "user2": {
+            "username": "lil_raccoonster",
+            "email": "user456@example.com",
+            "profilePic": "https://imgur.com/ukQViE0.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#00ffff",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                }
+            ]
+        },
+        "user3": {
+            "username": "rat_karen",
+            "email": "user789@example.com",
+            "profilePic": "https://imgur.com/hOUMM4a.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#00ffff",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                }
+            ]
+        }
+    },
+    "profile-info": {
+        "master-user": {
+            "username": "silly_trash_girl",
+            "profilePic": "https://imgur.com/TH1onWl.jpeg",
+            "backgroundPic": "https://imgur.com/SZuBuYz.jpeg",
+            "email": "stinky@email.com",
+            "password": "bigBallsSummer",
+            "bio": "love trash and silly little adventures, check out my collection and dm me if u wanna check out some dumpsters with me",
+            "backgroundColor": "#ffc0cb",
+            "collection": [
+                {
+                    "name": "bread",
+                    "picture": "https://imgur.com/8SXbtPd.jpeg",
+                    "caption": "found it in an abanduned space station"
+                },
+                {
+                    "name": "raccoon toy",
+                    "picture": "https://imgur.com/sSErM1l.jpeg",
+                    "caption": "idk what it is but my raccon loves staring at it"
+                },
+                {
+                    "name": "tv still works",
+                    "picture": "https://imgur.com/579bifq.jpeg",
+                    "caption": "love watching netflix on this bad boy"
+                }
+            ],
+            "raccoonEnergyPoints": 10,
+            "achievements": {
+                "completed-profile": true,
+                "added-item-to-collection": true,
+                "fed-raccoon": true,
+                "became-god": false,
+                "figured-out-how-to-use-canvas": false,
+                "is-a-pretty-boy": true
+            }
+        }
+    }
+}
