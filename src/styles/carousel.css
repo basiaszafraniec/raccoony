@@ -47,10 +47,12 @@
 
 .prev-btn {
   left: 10px;
+  z-index: 10;
 }
 
 .next-btn {
   right: 10px;
+  z-index: 10;
 }
 
 .carousel-container button:hover {

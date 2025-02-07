@@ -12,7 +12,7 @@ const Feed = ({ posts, users }) => {
       {Object.entries(posts).map(([postId, post]) => (
         <PostComp key={post.id} post={post} users={users} />
       ))}
-      <h2>Ur all caught up :)</h2>
+      <h2 className="balls">Ur all caught up :)</h2>
     </div>
   );
 };

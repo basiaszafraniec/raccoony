@@ -3,7 +3,6 @@ import Feed from './pages/feed';
 import Map from './pages/map';
 import Raccoon from './pages/raccoon';
 import Inbox from './pages/inbox';
-import Message from './pages/message.jsx';
 import Profile from './pages/profile';
 import UserProfile from './pages/userProfile.jsx';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
@@ -68,9 +67,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Feed posts={posts} users={users} />} />
         <Route path="/map" element={<Map />} />
-        <Route path="/raccoon" element={<Raccoon />} />
+        <Route path="/raccoon" element={<Raccoon profileInfo={profileInfo} />} />
         <Route path="/inbox" element={<Inbox />} />
-        <Route path="/message" element={<Message />} />
         <Route path="/profile" element={<Profile users={users} profileInfo={profileInfo} />} />
         <Route path="/user/:userId" element={<UserProfile users={users} />} />
       </Routes>

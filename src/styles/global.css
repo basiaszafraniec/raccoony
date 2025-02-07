@@ -10,6 +10,10 @@
   color: white;
 }
 
+.color-picker {
+  border: #FF2D95;
+}
+
 .custom-cursor {
   cursor: url("https://wallpapers.com/images/hd/classic-computer-mouse-cursor-icon-hdmlfh2pkzfr7r13.png"), auto;
 }
@@ -39,4 +43,12 @@ body {
 
 .messages {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.messages img {
+  width: 100%;
 }

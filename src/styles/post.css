@@ -5,6 +5,11 @@
   flex-direction: column;
   align-items: center;
 }
+
+.balls {
+  padding-bottom: 5rem;
+}
+
 .post-card {
   width: 80%;
   background-color: #41e6f5;

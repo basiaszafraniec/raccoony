@@ -56,12 +56,6 @@
     justify-content: center;
   }
 
-  .prof-username,
-  .collection-name {
-    text-shadow: none;
-    display: flex;
-  }
-
   .follow-btn,
   .message-btn {
     padding: 1rem;

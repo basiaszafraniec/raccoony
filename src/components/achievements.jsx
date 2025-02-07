@@ -20,7 +20,7 @@ const Achievements = ({ user }) => {
 
         <div className="achievements-container">
             <div className="post-header">
-                <span><h2>achievements</h2></span>
+                <h2 className="szczur">achievements</h2>
             </div>
             <div className="achievements">
                 {achievementsArray.map(([key, value]) => {
