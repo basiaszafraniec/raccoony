@@ -6,7 +6,7 @@ import Inbox from './pages/inbox';
 import Message from './pages/message.jsx';
 import Profile from './pages/profile';
 import UserProfile from './pages/userProfile.jsx';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 import { ref, get, child } from "firebase/database";
 import { db } from "./firebase.js";

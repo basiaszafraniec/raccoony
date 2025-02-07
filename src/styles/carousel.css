@@ -56,3 +56,8 @@
 .carousel-container button:hover {
   color: #FF2D95;
 }
+
+.carousel-image.grayed {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}

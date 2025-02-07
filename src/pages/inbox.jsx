@@ -12,17 +12,10 @@ const Inbox = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="inbox-container">
-      <h2>Inbox</h2>
-      <div className="message-list">
-        {messages.map((msg) => (
-          <div key={msg.id} className={`message-item ${msg.isGroup ? "group" : "user"}`} onClick={() => navigate(`/message/${msg.id}`)}>
-            <span className="message-name">{msg.name}</span>
-            <span className="message-preview">{msg.lastMessage}</span>
-          </div>
-        ))}
-      </div>
+    <div className="messages">
+      <h1>just imagine messanger but it's way cooler</h1>
     </div>
+
   );
 };
 
