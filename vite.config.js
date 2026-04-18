@@ -1,24 +1,7 @@
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-// })
-
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react"; // this on might be "import react from "@vitejs/plugin-react";" in your solution
-
-// https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
-    const config = {
-        plugins: [react()],
-        base: "/"
-    };
-
-    if (command !== "serve") {
-        config.base = "/raccoony";
-    }
-
-    return config;
-});
+export default defineConfig({
+  plugins: [react()],
+  base: '/raccoony/', // ← your repo name here
+})
