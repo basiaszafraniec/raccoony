@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Restore path from 404.html redirect
+      (function() {
+        var p = window.location.search.slice(1).split('&').filter(function(s){ return s.startsWith('p='); })[0];
+        if (p) {
+          p = p.slice(2).replace(/~and~/g, '&');
+          var q = window.location.search.slice(1).split('&').filter(function(s){ return s.startsWith('q='); })[0];
+          q = q ? ('?' + q.slice(2).replace(/~and~/g, '&')) : '';
+          window.history.replaceState(null, null, '/raccoony/' + p + q + window.location.hash);
+        }
+      })();
+    </script>
     <link rel="icon" href="/raccoony/raccoon-icon.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Raccoony — the dumpster diving community" />
